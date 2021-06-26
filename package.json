@@ -1,0 +1,19 @@
+{
+  "name": "inventorymanagement",
+  "version": "1.0.0",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "V Lakshmi Bhavana",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6"
+  },
+  "devDependencies": {},
+  "description": "CRUD"
+}
