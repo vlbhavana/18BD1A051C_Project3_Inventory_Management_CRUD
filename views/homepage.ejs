@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <title>Liberty Footwear</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="c1">Liberty Footwear Inventory Management</h1>
+        <h3><a href="/stockDetails" class="c2">Stock Details</a></h3>
+        <h3><a href="/addProduct" class="c2">Add New Product</a></h3>
+        <h3><a href="/updateStock" class="c2">Update Stock</a></h3>
+        <h3><a href="/deleteProduct" class="c2">Delete Product</a></h3>
+        <h2>Welcome</h2>
+        <p>Liberty Footwear was established in the year 2015. We are the leading manufacturers of Embroidered Leather footware, Party wear Leather footwear, Gents Leather slippers, Casual Leather slippers, Ladies Leather slippers, Fancy Leather footwear and so on. Backed by a team of skilled professionals, our enterprise is able to offer qn exclusive range of flip flops slippers. The range manufactured using finest quality material and high technology under the strict industry laid norms.</p>
+        <p>With a variety of colors, designs and sizes our range caters to precise needs of the customers. Our express delivery system is one that stands by its punctuality. Be it quality, Latest trends we've kept up with times with the aid of our industrious workforce.</p>
+        <center>
+            <table>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Category</th>
+                    <th>Type</th>
+                    <th>Size</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                </tr>
+                <% for(var i=0; i<data.length; i++){ %>
+                <tr>
+                    <td><%= data[i].pid %></td>
+                    <td><%= data[i].category %></td>
+                    <td><%= data[i].type %></td>
+                    <td><%= data[i].size %></td>
+                    <td><%= data[i].stock %></td>
+                    <td><%= data[i].sp %></td>
+                </tr>
+                <% } %>
+        </table>
+        </center>
+        <footer>
+            Copytright@LibertyFootwear,Some Rights Reserved
+        </footer>
+    </body>
+</html>
